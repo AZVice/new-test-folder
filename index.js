@@ -205,7 +205,7 @@ let rectangle = {
 
 console.log(rectangle.area())
 */
-
+/*
 let dog = {
     sound: "arrrf",
     playSound: function(){
@@ -219,3 +219,13 @@ let cat = {
 }
 
 cat.playSound()
+*/
+/*
+let btn = document.querySelector("#btn");
+
+btn.onclick = function(){
+    alert("clicked");
+};
+*/
+
+
