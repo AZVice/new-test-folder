@@ -227,5 +227,57 @@ btn.onclick = function(){
     alert("clicked");
 };
 */
+/*
+async function wellingtonEats(hamburger){
+    await sleep(259200000)
+    return "$3.50"
+    
+}
+*/
+/*
+function makeBreakfast(){
+    let afterAllitems = Promise.all([
+        cookBacon(),
+        cookEggs(),
+        makeTea()
+    ])
+    console.log(afterAllitems)
 
+    afterAllitems.then(() => {
+        serve()
+    })
+}*/
 
+/*
+for(i = 0;i <= 10; i+=2){
+    console.log(i)
+}
+*/
+/*
+let i = 0;
+
+while(i <= 10){
+    console.log(i)
+    i= i + 2
+}
+*/
+/*
+async function getReddit(){
+    let response = await fetch('https//://www.reddit.com/');
+    console.log(response)
+}
+*/
+
+const username = localStorage.getItem("username")
+const showOnDiv = document.getElementById("test")
+showOnDiv.textContent = `Player, ${username || "Guest"}!`;
+
+const updateButton = document.getElementById("updateButton");
+updateButton.addEventListener("click", () => {
+    const nameInput = document.getElementById("nameInput");
+    const newName = nameInput.value;
+
+    localStorage.setItem("username", newName);
+    showOnDiv.textContent = `Hello, ${newName}!;`
+
+});

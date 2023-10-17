@@ -1,0 +1,13 @@
+#test{
+    width: 200px;
+    height: 200px;
+    outline: 3px solid black;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    /*text-align: center;*/
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
